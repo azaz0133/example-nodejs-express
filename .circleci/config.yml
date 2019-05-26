@@ -22,7 +22,7 @@ jobs:
       - run: 
           name: "Build docker image and push to docker hub"
           command: |
-              cp: Docker.production Dockerfile
+              cp Docker.production Dockerfile
               docker build -t toeydocker/example-node:latest .
               docker build -t toeydocker/example-node:${CIRCLE_SHA1} .
               docker push toeydocker/example-node:latest
