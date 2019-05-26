@@ -37,8 +37,8 @@ jobs:
                 etlweather/gaucho upgrade $RANCHER_EXAMPLE_NODEJS \
                 --imageUuid 'docker:toeydocker/example-node:latest' \
                 --batch_size 3 --start_first \
-                --auto_complete --timeout 600 \
+                --timeout 600 \
                 /
-                
+
 
       - run: echo Done
